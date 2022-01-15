@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="iframeResizer.contentWindow.min.js"></script>
+  <!-- Links -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/wind/Wind.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit:400,500,900" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Meta -->
+  <title>Wind Swap</title>
+  <meta name="description"
+    content="Flip WINDY, and stake them with Wind Swap, the best decentralized exchange on Binance Smart Chain.y" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="fortmatic-site-verification" content="j93LgcVZk79qcgyo" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no" />
+  <meta name="twitter:image" content="https://app.windswap.finance/images/Logo.png" />
+  <meta name="twitter:description"
+    content="Trade Any Token On WindSwap - The World's First Deflationary Bridging Token." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="WindSwap - A next evolution DeFi exchange on Binance Smart Chain (BSC)" />
+
+  <script type="text/javascript" src="%PUBLIC_URL%/js/charting_library/charting_library.standalone.js"></script>
+  <script type="text/javascript" src="%PUBLIC_URL%/js/datafeeds/udf/dist/polyfills.js"></script>
+  <script type="text/javascript" src="%PUBLIC_URL%/js/datafeeds/udf/dist/bundle.js"></script>
+  <script type="text/javascript" src="%PUBLIC_URL%/js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <audio id="bgMusic">
+    <source src="swap.mp3" type="audio/mp3" />
+  </audio>
+  <div id="root"></div>
+  <script>
+    var options = {
+      chart: {
+        type: 'bar'
+      },
+      series: [{
+        name: 'sales',
+        data: [30, 40, 45, 50, 49, 60, 70, 91, 125]
+      }],
+      xaxis: {
+        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      }
+    }
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+    chart.render();
+  </script>
+</body>
+
+</html>

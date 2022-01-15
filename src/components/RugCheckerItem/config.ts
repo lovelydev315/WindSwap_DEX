@@ -1,0 +1,52 @@
+const config = {
+  token_score: 78.75,
+  social_score: 90,
+  critical_count: 0,
+  warning_count: 1,
+  social_count: 4,
+  messages: {
+    critical: [],
+    warning: [
+      {
+        message: 'Ownership not renounced',
+        tooltip: 'The contract does not belong to a dead address',
+      },
+    ],
+  },
+  holders_distribution: {
+    top10_percentage: 53.21,
+    top10_contracts: 3,
+    top50_percentage: 68.13,
+    top50_contracts: 3,
+    top100_percentage: 75.52,
+    top100_contracts: 3,
+  },
+  tokenName: 'WindSwap',
+  symbol: 'WINDY',
+  decimals: '8',
+  price: '0.2811103018',
+  blueCheckmark: 'false',
+  description: 'WindSwap ($WINDY) is a deflationary DeFi bridging token.',
+  socials: {
+    website: 'https://windswap.finance/',
+    email: '',
+    blog: '',
+    reddit: '',
+    slack: '',
+    facebook: '',
+    twitter: 'https://twitter.com/windswap',
+    bitcointalk: '',
+    github: '',
+    telegram: 'https://t.me/windswapmembers',
+    wechat: '',
+    linkedin: '',
+    discord: '',
+    whitepaper: 'https://windswap.finance/whitepaper/litepaper.pdf',
+  },
+  ownership_renounced: false,
+  mintable: false,
+  lp_balance_v1: 261577,
+  lp_balance_v2: 886,
+}
+
+export default config
